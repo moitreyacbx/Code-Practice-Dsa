@@ -7,7 +7,7 @@ void maxelement(vector<int> arr) {
     int temp = arr[0], count = 0;
     for (int i = 0; i < arr.size(); i++) {
         count = 0;
-        for (int j = 0; j < arr.size(); j++) {
+        for (int j = i; j < arr.size(); j++) {
             if (arr[j] == arr[i]) {
                 count++;
             }
@@ -20,7 +20,7 @@ void maxelement(vector<int> arr) {
 }
 
 int main() {
-    vector<int> vec = {5, 1, 4, 1, 1, 5, 1};
+    vector<int> vec = {5, 1, 4, 1, 1, 5, 1,5,1,1,1,5,5,5,5,5,5,5,5,5,5};
     maxelement(vec);
     return 0;
 }
